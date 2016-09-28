@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lab1</string>
+    <string name="hello_message">Привет мир!</string>
+    <string name="ButtonText">Я кнопка</string>
+    <string name="title_activity_login">Деятельность Логин</string>
+    <string name="title_activity_list_item">Список деятельностей</string>
+    <string name="Login"></string>
+</resources>
