@@ -6,5 +6,9 @@
     <string name="ButtonText">Я кнопка</string>
     <string name="title_activity_login">Деятельность Логин</string>
     <string name="title_activity_list_item">Список деятельностей</string>
+    <string name="onSwitch">переключатель работает</string>
+    <string name="offSwitch">переключатель Не работает</string>
     <string name="Login"></string>
+    <string name="dialog_message">Вы хотите, чтобы выйти из программы</string>
+    <string name="dialog_title">закрыть деятельность</string>
 </resources>

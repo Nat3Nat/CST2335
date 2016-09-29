@@ -1,8 +1,17 @@
 <resources>
-    <string name="app_name">Lab1</string>
+    <string name="app_name">Lab3</string>
     <string name="hello_message">Hello world!</string>
     <string name="ButtonText">I\’m a button</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="Login"></string>
+    <string name="shared_pref_key">myLab3App.PREFERENCE_FILE_KEY</string>
+    <string name="login_name_key">login_name</string>
+    <string name="dialog_message">Do you want to quit?</string>
+    <string name="dialog_title">Close the activity</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="onSwitch">Switch is on</string>
+    <string name="offSwitch">Switch is off</string>
+    <string name="Response">response</string>
+
     <string name="title_activity_list_item">ListItemActivity</string>
 </resources>
