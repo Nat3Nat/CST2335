@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class StartActivity extends AppCompatActivity {
     protected static String ACTIVITY_NAME = "StartActivity";
+    Button  ChatButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i(ACTIVITY_NAME, "In onCreate()");
@@ -23,8 +24,28 @@ public class StartActivity extends AppCompatActivity {
                 Intent intent = new Intent(StartActivity.this, ListItemActivity.class);
                 startActivityForResult(intent,5);
 
+
+
             }
-        });}
+
+        });
+       ChatButton = (Button) findViewById(R.id.ChatButton);
+        ChatButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+
+                Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+                startActivityForResult(intent,0);
+
+
+
+                // Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+               // startActivity(intent);
+            }
+        });
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

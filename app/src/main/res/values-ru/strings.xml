@@ -11,4 +11,5 @@
     <string name="Login"></string>
     <string name="dialog_message">Вы хотите, чтобы выйти из программы</string>
     <string name="dialog_title">закрыть деятельность</string>
+    <string name="ChatButton">Начать Чат</string>
 </resources>

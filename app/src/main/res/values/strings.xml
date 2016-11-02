@@ -12,6 +12,9 @@
     <string name="onSwitch">Switch is on</string>
     <string name="offSwitch">Switch is off</string>
     <string name="Response">response</string>
+    <string name="ChatButton">Start Chat</string>
 
     <string name="title_activity_list_item">ListItemActivity</string>
+    <string name="title_activity_chat_window">ChatWindow</string>
+    <string name="send">SEND</string>
 </resources>
