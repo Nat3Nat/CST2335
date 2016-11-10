@@ -89,7 +89,7 @@ public class ChatWindow extends AppCompatActivity {
         }
         int columnCount = c.getColumnCount();
         Log.i(ACTIVITY_NAME, "Cursor's column count =" + columnCount);
-        for(int i = 0; i < columnCount; i++) {
+        for(int i = 0; i < columnCount; i++)
             Log.i(ACTIVITY_NAME, "Cursor's column " + i + " name = " + c.getColumnName(i));
 
 
@@ -112,7 +112,7 @@ public class ChatWindow extends AppCompatActivity {
          messageAdapter = new ChatAdapter(this);
 
         lv.setAdapter (messageAdapter);
-    }}
+    }
 
 
     public void onBtnClick() {

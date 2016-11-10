@@ -12,40 +12,50 @@ import android.widget.Toast;
 public class StartActivity extends AppCompatActivity {
     protected static String ACTIVITY_NAME = "StartActivity";
     Button  ChatButton;
+    Button weatherButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i(ACTIVITY_NAME, "In onCreate()");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         Button imButton = (Button) findViewById(R.id.imButton);
-        imButton.setOnClickListener(new View.OnClickListener(){
+        imButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
                 Intent intent = new Intent(StartActivity.this, ListItemActivity.class);
-                startActivityForResult(intent,5);
-
+                startActivityForResult(intent, 5);
 
 
             }
 
         });
-       ChatButton = (Button) findViewById(R.id.ChatButton);
-        ChatButton.setOnClickListener(new View.OnClickListener(){
+        ChatButton = (Button) findViewById(R.id.ChatButton);
+        ChatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.i(ACTIVITY_NAME, "User clicked Start Chat");
 
-                Intent intent = new Intent(StartActivity.this, ChatWindow.class);
-                startActivityForResult(intent,0);
-
+                Intent intent = new Intent(StartActivity.this, MessageListActivity.class);
+                startActivityForResult(intent, 0);
 
 
                 // Intent intent = new Intent(StartActivity.this, ChatWindow.class);
-               // startActivity(intent);
+                // startActivity(intent);
             }
         });
-    }
 
+        weatherButton = (Button) findViewById(R.id.weatherButton);
+        weatherButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(ACTIVITY_NAME, "User clicked weather forcast");
+
+                Intent intent = new Intent(StartActivity.this, WeatherForecast.class);
+                startActivityForResult(intent, 0);
+            }
+
+        });
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

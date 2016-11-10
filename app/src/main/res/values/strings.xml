@@ -17,4 +17,7 @@
     <string name="title_activity_list_item">ListItemActivity</string>
     <string name="title_activity_chat_window">ChatWindow</string>
     <string name="send">SEND</string>
+    <string name="title_activity_weather_forecast">WeatherForecast</string>
+    <string name="title_message_list">Messages</string>
+    <string name="title_message_detail">Message Detail</string>
 </resources>

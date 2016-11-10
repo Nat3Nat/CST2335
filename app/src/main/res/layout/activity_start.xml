@@ -30,4 +30,13 @@
         android:id="@+id/ChatButton"
         android:layout_below="@+id/imButton"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Forecast"
+        android:id="@+id/weatherButton"
+        android:layout_below="@+id/ChatButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/imButton" />
 </RelativeLayout>
